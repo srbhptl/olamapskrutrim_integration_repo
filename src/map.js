@@ -17,9 +17,9 @@ const Map = () => {
       zoom: 3, // Adjust zoom level as needed
       transformRequest: (url, resourceType) => {
         if (!url.includes('?')) {
-          url = url + '?api_key=L5SJns0ziY77pp4tpx1bHQsFtkhhN2Gb76reivs9x';
+          url = url + '?api_key=[apikey]';
         } else {
-          url = url + '&api_key=L5SJns0ziY77pp4tpx1bHQsFtkhhN2Gb76reivs9x';
+          url = url + '&api_key=[apikey]';
         }
         return { url, resourceType };
       }
@@ -34,7 +34,7 @@ const Map = () => {
     //   map.addSource('planet-source', {
     //     type: 'vector',
     //     tiles: [
-    //       'https://api.olamaps.io/tiles/vector/v1/data/planet/{0}/{0}/{0}.pbf?key=L5SJns0ziY77pp4tpx1bHQsFtkhhN2Gb76reivs9x'
+    //       'https://api.olamaps.io/tiles/vector/v1/data/planet/{0}/{0}/{0}.pbf?key=[apikey]x'
     //     ],
     //     minzoom: 0,
     //     maxzoom: 10
